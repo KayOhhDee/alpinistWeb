@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     new SVGSpritemapPlugin("./app/assets/images/icons/**/*.svg", {
       output: {
-        filename: "images/sprites/spritemap.svg",
+        filename: "assets/images/sprites/spritemap.svg",
         svg4everybody: {
           nosvg: true,
           polyfill: true
