@@ -34,7 +34,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "lazysizes": "^5.1.0",
     "picturefill": "^3.0.3"
   }
 }

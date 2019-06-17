@@ -1,0 +1,35 @@
+
+.page-section {
+  padding: 1.2rem 0;
+
+  @include atSmall {
+    padding: 3.5rem 0;
+  }
+  
+  &__heading{
+    font-size: 2.75rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    text-align: center;
+    
+    &-green{
+      color: $primaryGreen;
+      font-weight: 300;
+    }
+
+    @include atSmall{
+      font-size: 3.75rem;
+      margin-top: 0;
+    }
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  &__green {
+    background: $primaryGreen;
+    color: #FFFFFF;
+  }
+  
+}
