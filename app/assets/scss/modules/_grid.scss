@@ -1,0 +1,44 @@
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__image{
+    height: 350px;
+    padding: 20px;
+    flex: 1;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__large{
+    @include atSmall {
+      flex-basis: 100%;
+    }
+
+    @include atMedium {
+      flex-basis: 50%;
+    }
+
+    @include atLarge {
+      flex-basis: 70%;
+    }
+  }
+
+  &__small{
+    @include atSmall {
+      flex-basis: 100%;
+    }
+
+    @include atMedium {
+      flex-basis: 50%;
+      
+    }
+
+    @include atLarge {
+      flex-basis: 30%;
+    }
+  }
+}
