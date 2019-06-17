@@ -21,7 +21,14 @@ module.exports = {
     rules: [
       {
         test: /\.(html)$/,
-        use: ["html-loader"]
+        use: [
+          {
+            loader: "html-loader",
+            options: {
+              attrs: ["img:src", "source:srcset"]
+            }
+          }
+        ]
       },
       {
         test: /\.m?js$/,
