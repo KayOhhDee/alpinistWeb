@@ -1,0 +1,20 @@
+.features {
+
+  &__text{
+
+    h3{
+      margin: 0.6em 0;
+      padding: 0;
+      font-size: 1.875rem;
+      font-weight: 100;
+      text-align: center;
+    }
+    
+    p{
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      color: lighten($primaryGreen, 75);
+      font-weight: 200;
+    }
+  }
+}

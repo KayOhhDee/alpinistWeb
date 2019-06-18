@@ -13,6 +13,24 @@
     background-position: center;
   }
 
+  &__feature {
+    flex-basis: 100%;
+    padding: 20px;
+    text-align: center;
+
+    &-icon {
+      fill: $primaryGold;
+      width: 80px;
+      height: 80px;
+    }
+
+    @include atMedium {
+      padding: 30px 50px;
+      flex-basis: 50%;
+      text-align: center;
+    }
+  }
+
   &__large{
     @include atSmall {
       flex-basis: 100%;
