@@ -79,13 +79,20 @@
 
         h4 {
           font-weight: 500;
-          font-size: 1.475rem;
+          font-size: 1.275rem;
+
+          @include atSmall{
+            font-size: 1.475rem;
+          }
         }
 
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
           letter-spacing: 0.5px;
           font-weight: 300;
+          @include atSmall {
+            font-size: 1.2rem;
+          }
         }
 
   }
