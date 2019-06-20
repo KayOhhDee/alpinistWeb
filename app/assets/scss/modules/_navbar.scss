@@ -124,7 +124,7 @@
       left: 0%;
       transform: translate(0%, -10px) scale(1);
 
-      .site-nav__isdarker & {
+      .page-nav__isdarker & {
         transform: scale(0.5);
         transform-origin: 0 0;
       }
