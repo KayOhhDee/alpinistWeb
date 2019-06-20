@@ -1,0 +1,10 @@
+.initiallyHide {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 1.5s ease-in-out;
+}
+
+.itemsVisible {
+  opacity: 1;
+  transform: scale(1);
+}
