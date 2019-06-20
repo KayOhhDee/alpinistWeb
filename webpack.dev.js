@@ -12,7 +12,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./app/index.html"
-    })
+    }),
   ],
   module: {
     rules: [
@@ -28,7 +28,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.scss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
       }
     ]
   }
