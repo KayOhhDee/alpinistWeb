@@ -5,12 +5,27 @@
   justify-content: center;
 
   &__image{
-    height: 350px;
-    padding: 20px;
+    height: 210px;
+    padding: 10px 0;
     flex: 1;
     background-clip: content-box;
     background-size: cover;
     background-position: center;
+
+    @include atSmaller{
+      padding: 20px 0;
+      height: 290px;
+    }
+
+    @include atSmall{
+      padding: 20px 0;
+      height: 350px;
+    }
+
+    @include atMedium{
+      height: 350px;
+      padding: 20px;
+    }
   }
 
   &__feature {
