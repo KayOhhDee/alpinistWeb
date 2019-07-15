@@ -1,12 +1,16 @@
 .container {
-  padding-right: 18px;
+  overflow: hidden;
   padding-left: 18px;
+  padding-right: 18px;
   max-width: 1236px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
-  &__relative {
-    position: relative;
-  }
+  // &__relative {
+  //   @include atMedium {
+  //     position: relative;
+  //   }
+  // }
 
   .container {
     padding-right: 0;

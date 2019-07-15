@@ -29,13 +29,13 @@
   }
 }
 
-@mixin menubar($top) {
-  width: 30px;
+@mixin menubar($top, $transform) {
+  width: 20px;
   height: 3px;
   margin: 0 auto;
   position: absolute;
   top: $top;
   left: 0;
-  transform-origin: 0 0;
+  transform-origin: 0 $transform;
   background-color: #ecf0f1;
 }
