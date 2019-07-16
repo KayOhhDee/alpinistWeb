@@ -4,7 +4,6 @@
   width: 100%;
   z-index: 2;
   padding: 10px 0;
-  transition: background-color .3s ease-in;
 
   &__fadeIn {
     background: rgba($primaryGreen, .55);
@@ -13,10 +12,16 @@
   @include atMedium {
     position: fixed;
     background: $navbarColor;
+    transition: background-color .3s ease-in;
   }
 
   &__isdarker {
     background-color: rgba($primaryGreen, .95);
+    opacity: 0;
+
+    @include atMedium {
+      opacity: 1;
+    }
   }
 
   &__row {

@@ -5,7 +5,7 @@ import smoothScroll from "jquery-smooth-scroll";
 class Header {
   constructor() {
     this.pageHeader = $(".page-nav");
-    this.triggerElement = $(".hero-large__heading");
+    this.triggerElement = $(".page-nav__brand");
     this.pageSections = $(".page-section");
     this.links = $(".link");
     this.showHeader = this.showHeader.bind(this);
@@ -25,7 +25,8 @@ class Header {
       element: this.triggerElement[0],
       handler: function(direction) {
         return changeClass(direction);
-      }
+      },
+      offset: "-15%"
     });
   }
 
